@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+body {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+label {
+
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  outline-style: solid;
+  outline-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px; 
+}
+
+button {
+  margin-left: 0.5em;
+}
+
+</style>
+<title>Order</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+<form action="https://www.w3schools.com/action_page.php" method="get">
+
+    <label for="name">Name:</label>
+<input type="text" id="name" name="name" value="" />
+
+    <p>
+       <label for="mail">Email Address:</label>
+       <input type="email" id="mail" name="user_email" />
+     </p>
+
+     
+   <p>
+     <label for="type">Select Coffee Type</label>
+   <select id="type" name="type">
+      <option selected>Black</option>
+      <option>Americano</option>
+    <option>Cappuccino</option>
+     <option>Mocha</option>
+     <option>Affogato</option>
+     <option>Frappe</option>
+   </select>
+   </p>
+
+
+   <p>
+   <fieldset>
+     <legend>Select a size:</legend>
+   
+     <div>
+       <input type="radio" id="small" name="coffee" value="small" checked />
+       <label for="small">Small</label>
+     </div>
+   
+     <div>
+       <input type="radio" id="medium" name="coffee" value="medium" />
+       <label for="medium">Medium</label>
+     </div>
+   
+     <div>
+       <input type="radio" id="large" name="coffee" value="large" />
+       <label for="large">Large</label>
+     </div>
+   </fieldset>
+   </p>
+   
+<p>
+ <fieldset>
+     <legend>Add-Ons:</legend>
+   
+     <div>
+       <input type="checkbox" id="espresso" name="espresso" checked />
+       <label for="espresso">Extra Shot of Espresso</label>
+     </div>
+   
+     <div>
+       <input type="checkbox" id="almondmilk" name="almondmilk" />
+       <label for="almondmilk">Almond Milk</label>
+     </div>
+
+     <div>
+        <input type="checkbox" id="cream" name="cream" />
+        <label for="cream">Cream</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="sugar" name="sugar" />
+        <label for="sugar">Sugar</label>
+      </div>
+        <div>
+    <input type="checkbox" id="iced" name="iced" />
+    <label for="iced">Iced</label>
+  </div>
+   </fieldset>
+ 
+   </p>
+   <p>
+   <textarea name="textarea" rows="10" cols="20">Special Instructions</textarea>
+   </p>
+   
+   
+  <p class="button">
+     <button type="submit">Submit Order</button>
+   </p>
+   
+   
+
+
+
+
+
+
+</form>
+
+
+</body>
+</html>
