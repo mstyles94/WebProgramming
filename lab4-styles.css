@@ -1,0 +1,38 @@
+* {
+   background: pink 
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    font-family: arial;
+    
+  }
+
+  a:link {
+    color: blue;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  p {
+    color: red;
+    padding: 10px;
+  }
+  li::marker {
+    color: green;
+  }
+
+  li {
+    color: purple;
+  }
+
+  .styled-box {
+    border: 2px solid;
+    background: lightgrey;
+    padding: 15px;
+    text-align: center;
+
+  }
